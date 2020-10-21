@@ -1,0 +1,91 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+@media(max-width: 37.5em){
+    html{
+        font-size: 50%;
+    }
+}
+
+main{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    
+}
+h2{
+    font-size: 1.6rem;
+    margin-top: 2rem;
+    text-align: center;
+}
+.container{
+    display: flex;
+    height: auto;
+    width: auto;
+    min-height: 50rem;
+    min-width: 45rem;
+    border: 0.2rem solid black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    background-color: black; 
+}
+
+.bird{
+    position: absolute;
+    border-radius: 50%;
+    height: 2rem;
+    width: 2rem;
+    background-color: red;
+    margin-top: 25rem;
+    margin-left: 5rem;
+    transition: all linear 2000ms;
+}
+
+
+.pillarUp{
+    align-self: flex-start;
+    position: absolute;
+    width: 4rem;
+    height: 28rem;
+    border: 1.6px solid black;
+    background-color: chartreuse;
+    animation: move linear 3000ms infinite;
+}
+
+.pillarDown{
+    align-self: flex-end;
+    position: absolute;
+    width: 4rem;
+    height: 11rem;
+    border: 1.6px solid black;
+    background-color: chartreuse;
+    animation: move linear 3000ms infinite;
+}
+
+
+
+@keyframes move{
+    0%{
+        margin-left: 45rem;
+
+    }
+
+   
+
+    100%{
+    
+        margin-left: -12rem
+
+    }
+
+}
